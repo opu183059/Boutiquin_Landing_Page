@@ -17,10 +17,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar max-w-6xl border-b-[2px] py-3 mx-auto flex justify-between items-center px-2 md:px-0">
+      <div className="navbar max-w-6xl border-b-[2px] py-3 mx-auto flex justify-between items-center px-2 md:px-0 relative">
         <div className="logo flex items-center">
-          <img src={logo} alt="logo" className="w-[50px]" />
-          <h1 className="font-kaushan text-[30px]">Boutiquin</h1>
+          <img src={logo} alt="logo" className="w-[45px]" />
+          <h1 className="font-kaushan text-[25px]">Boutiquin</h1>
         </div>
         <div className="menu hidden md:block">
           <ul className="flex gap-4">
@@ -57,7 +57,7 @@ const Navbar = () => {
 
       {/* Mobile menu  */}
       <div
-        className={`mobileMenu overflow-hidden ${
+        className={`mobileMenu absolute w-full overflow-hidden ${
           toggle ? `h-80` : `h-0`
         } bg-white duration-1000 flex justify-center items-center text-center z-50`}
       >
