@@ -4,9 +4,9 @@ import leftPic from "../../../assets/images/banner/left.png";
 import rightPic from "../../../assets/images/banner/right.png";
 const Banner = () => {
   return (
-    <div className="flex h-screen items-center">
-      <div className="left w-7/12">
-        <div className="title text-7xl font-poppins leading-[65px]">
+    <div className="flex min-h-screen md:min-h-[500px] items-center">
+      <div className="left md:w-7/12">
+        <div className="title text-7xl font-poppins ">
           <h1>
             Natural <span className="text-[#F78FB3]">product</span>
           </h1>
@@ -24,7 +24,7 @@ const Banner = () => {
           for a youthful.
         </p>
         <div className="flex gap-4 mt-4">
-          <button className="px-4 py-2 rounded-md text-sm text-white shadow-lg bg-[#F78FB3]">
+          <button className="px-6 py-2 rounded-md text-sm text-white shadow-lg bg-[#F78FB3]">
             Shop Now
           </button>
           <button className="flex gap-2 items-center text-sm font-bold">
@@ -33,7 +33,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="right w-3/12 relative">
+      <div className="right md:w-3/12 relative hidden md:block">
         <div className="img1 absolute -top-24 -left-16 z-40">
           <img src={leftPic} alt="" className="h-[350px]" />
         </div>
