@@ -1,3 +1,4 @@
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import HomePage from "./pages/homepage/HomePage";
 
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <Navbar></Navbar>
       <HomePage></HomePage>
+      <Footer></Footer>
     </>
   );
 };

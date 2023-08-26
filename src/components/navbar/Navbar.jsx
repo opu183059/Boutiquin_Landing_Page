@@ -58,12 +58,12 @@ const Navbar = () => {
       {/* Mobile menu  */}
       <div
         className={`mobileMenu absolute w-full overflow-hidden ${
-          toggle ? `h-80` : `h-0`
+          toggle ? `h-full` : `h-0`
         } bg-white duration-1000 flex justify-center items-center text-center z-50`}
       >
-        <ul className="ps-3 py-4">
+        <ul className=" text-xl">
           {menu.map((item) => (
-            <li key={item.name} className="mb-3">
+            <li key={item.name} className="mb-8">
               <a href={item.link} className="uppercase font-poppins">
                 {item.name}
               </a>

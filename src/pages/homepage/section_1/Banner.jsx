@@ -4,9 +4,9 @@ import leftPic from "../../../assets/images/banner/left.png";
 import rightPic from "../../../assets/images/banner/right.png";
 const Banner = () => {
   return (
-    <div className="flex min-h-screen md:min-h-[500px] items-center">
-      <div className="left md:w-7/12">
-        <div className="title text-7xl font-poppins ">
+    <div className="flex min-h-[460px] md:min-h-[500px] items-center">
+      <div className="left md:w-7/12 p-6 md:p-0">
+        <div className="title text-5xl md:text-7xl font-poppins mb-3">
           <h1>
             Natural <span className="text-[#F78FB3]">product</span>
           </h1>
@@ -37,7 +37,7 @@ const Banner = () => {
         <div className="img1 absolute -top-24 -left-16 z-40">
           <img src={leftPic} alt="" className="h-[350px]" />
         </div>
-        <div className="shape absolute -bottom-[200px] left-16 border-2 border-black h-[350px] w-[170px] rounded-[50px]"></div>
+        <div className="shape absolute -bottom-[200px] left-[80px] border-2 border-black h-[350px] w-[170px] rounded-[50px]"></div>
         <div className="img2 absolute -right-28 -bottom-36">
           <img src={rightPic} alt="" className="h-[350px]" />
         </div>
