@@ -5,7 +5,7 @@ import rightPic from "../../../assets/images/banner/right.png";
 const Banner = () => {
   return (
     <div className="max-w-6xl mx-auto flex min-h-[460px] md:min-h-[500px] items-center">
-      <div className="left md:w-7/12 p-6 md:p-0">
+      <div className="left md:w-7/12 p-10 md:p-0">
         <div className="title text-5xl md:text-7xl font-poppins mb-3">
           <h1>
             Natural <span className="text-[#F78FB3]">product</span>

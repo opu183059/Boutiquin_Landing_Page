@@ -1,7 +1,7 @@
 import testimonial from "../../../assets/images/rest/Rectangle 709.png";
 const Testimonial = () => {
   return (
-    <div className="max-w-6xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-2 justify-center items-center font-poppins px-5">
+    <div className="max-w-6xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-2 justify-center items-center font-poppins px-10">
       <div className="left">
         <img src={testimonial} alt="" className="w-[450px]" />
       </div>

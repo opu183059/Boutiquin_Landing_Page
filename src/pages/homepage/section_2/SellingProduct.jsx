@@ -26,7 +26,7 @@ const SellingProduct = () => {
   };
   return (
     <div className="max-w-6xl mx-auto min-h-screen flex items-center">
-      <div className="md:flex gap-5  px-9 md:px-0">
+      <div className="md:flex gap-5  px-10 md:px-0">
         <div className="left flex flex-col text-center md:text-left justify-center md:w-4/12 mb-7 md:mb-0">
           <p>(1)Selling product</p>
           <h1 className="text-3xl mt-3 mb-1">Our Best Selling Products</h1>

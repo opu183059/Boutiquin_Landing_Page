@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const menu = [
     { name: "home", link: "#" },
-    { name: "about us", link: "#" },
+    { name: "about us", link: "#about" },
     { name: "product", link: "#" },
     { name: "flash sales", link: "#" },
   ];
@@ -36,7 +36,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="right flex gap-3">
+        <div className="right flex gap-3 cursor-pointer">
           <BiLockOpenAlt size={20}></BiLockOpenAlt>
           <RiGroupLine size={20}></RiGroupLine>
           <FiSearch size={20}></FiSearch>
@@ -64,7 +64,13 @@ const Navbar = () => {
         <ul className=" text-xl">
           {menu.map((item) => (
             <li key={item.name} className="mb-8">
-              <a href={item.link} className="uppercase font-poppins">
+              <a
+                href={item.link}
+                className="uppercase font-poppins"
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+              >
                 {item.name}
               </a>
             </li>

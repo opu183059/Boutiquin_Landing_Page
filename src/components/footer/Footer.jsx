@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import logo from "../../assets/images/logo.png";
 import paypal from "../../assets/images/payment/PayPal_.png";
 import mastercard from "../../assets/images/payment/MasterCard_.png";
@@ -6,7 +7,7 @@ import visa from "../../assets/images/payment/Visa_.png";
 const Footer = () => {
   return (
     <div className="bg-[#FFEFEE]">
-      <footer className="max-w-6xl mx-auto py-10 grid grid-cols-1 md:grid-cols-7 font-poppins px-5">
+      <footer className="max-w-6xl mx-auto py-10 grid grid-cols-1 md:grid-cols-7 font-poppins px-10">
         <div className="col-span-3 pe-4">
           <div className="logo flex items-center">
             <img src={logo} alt="logo" className="w-[45px]" />
