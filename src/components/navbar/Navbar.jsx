@@ -11,7 +11,7 @@ const Navbar = () => {
   const menu = [
     { name: "home", link: "#" },
     { name: "about us", link: "#about" },
-    { name: "product", link: "#" },
+    { name: "product", link: "#product" },
     { name: "flash sales", link: "#" },
   ];
 
