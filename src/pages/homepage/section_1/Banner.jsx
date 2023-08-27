@@ -2,9 +2,13 @@ import titlePic from "../../../assets/images/banner/titlePic.png";
 import play from "../../../assets/images/banner/play.png";
 import leftPic from "../../../assets/images/banner/left.png";
 import rightPic from "../../../assets/images/banner/right.png";
+import pinkStar from "../../../assets/images/banner/pinkStar.png";
+import Star from "../../../assets/images/banner/3Star.png";
+import blackStar from "../../../assets/images/banner/blackStar.png";
+import blackCross from "../../../assets/images/banner/blackCross.png";
 const Banner = () => {
   return (
-    <div className="max-w-6xl mx-auto flex min-h-[460px] md:min-h-[500px] items-center">
+    <div className="max-w-6xl mx-auto md:flex min-h-[460px] md:min-h-[500px] items-center">
       <div className="left md:w-7/12 p-10 md:p-0">
         <div className="title text-5xl md:text-7xl font-poppins mb-3">
           <h1>
@@ -33,14 +37,39 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="right md:w-3/12 relative hidden md:block">
-        <div className="img1 absolute -top-24 -left-16 z-40">
+      <div className="right px-5 md:px-0 md:w-3/12 h-screen relative">
+        <div className="img1 absolute bottom-24 md:-left-16 z-40">
           <img src={leftPic} alt="" className="h-[350px]" />
         </div>
-        <div className="shape absolute -bottom-[200px] left-[80px] border-2 border-black h-[350px] w-[170px] rounded-[50px]"></div>
-        <div className="img2 absolute -right-28 -bottom-36">
+        <div className="shape absolute bottom-56 md:bottom-[150px] left-24 md:left-[80px] border-2 border-black h-[350px] w-[170px] rounded-[50px]"></div>
+        <div className="img2 absolute right-5 md:-right-28 top-14">
           <img src={rightPic} alt="" className="h-[350px]" />
         </div>
+        <img
+          src={pinkStar}
+          alt=""
+          className="w-7 right-1 md:-right-32 top-36 absolute z-50"
+        />
+        <img
+          src={pinkStar}
+          alt=""
+          className="w-7 left-1 md:-left-20 bottom-60 md:top-80 absolute z-50"
+        />
+        <img
+          src={blackStar}
+          alt=""
+          className="w-7 left-20 md:left-4 top-28 md:top-16 absolute z-50"
+        />
+        <img
+          src={blackCross}
+          alt=""
+          className="w-5 right-16 bottom-[144px] absolute z-50"
+        />
+        <img
+          src={Star}
+          alt=""
+          className="w-12 right-10 md:-right-14 bottom-60 md:bottom-28 absolute z-50"
+        />
       </div>
     </div>
   );

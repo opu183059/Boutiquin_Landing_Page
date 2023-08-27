@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 const Card1 = ({ cardDetails }) => {
-  console.log(cardDetails);
   const { img, title, price, location, star } = cardDetails;
   return (
     <div className="shadow-lg rounded-lg font-poppins group cursor-pointer">

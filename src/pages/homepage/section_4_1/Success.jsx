@@ -2,7 +2,7 @@ const Success = () => {
   return (
     <div className="bg-[#FFEFEE] min-h-[180px] font-poppins mb-10">
       <div className="box relative w-10/12 mx-auto">
-        <div className="grid grid-cols-4 gap-4 bg-[#FFF] shadow-md h-[150px] absolute w-full top-24 rounded-lg">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-[#FFF] shadow-md h-[180px] absolute w-full top-3 md:top-24 rounded-lg py-5">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-4xl font-semibold">536+</h1>
             <p className="text-sm">Happy Clients</p>
